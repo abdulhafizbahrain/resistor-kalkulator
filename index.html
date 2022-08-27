@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>Resistor Calculator</title>
+</head>
+
+<body>
+
+    <!-- Main 6 Band -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <ul class="nav nav-tabs mb-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navTypeFourResistorBand" href="#">4 Band</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navTypeFiveResistorBand" href="#">5 Band</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navTypeSixResistorBand" href="#">6 Band</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navTypeSMDResistorBand" href="#">SMD</a>
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-primary text-center" id="resultTypeFourResistorBand" role="alert">
+                        100k ohm 4
+                    </div>
+
+                    <div class="alert alert-primary text-center visually-hidden" id="resultTypeFiveResistorBand"
+                        role="alert">
+                        100k ohm 5
+                    </div>
+
+                    <div class="alert alert-primary text-center visually-hidden" id="resultTypeSixResistorBand"
+                        role="alert">
+                        100k ohm 6
+                    </div>
+
+                    <div class="alert alert-primary text-center visually-hidden" id="resultTypeSMDResistorBand"
+                        role="alert">
+                        100k ohm SMD
+                    </div>
+
+                    <div class="resistor-container">
+                        <div class="resistor-img">
+                            <img src="/img/Resistor.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="resistor-band" id="typeFourResistorBand">
+                            <a class="rounded-0 bg-brown band-tall" id="bandOneTypeFourResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-black band-short" id="bandTwoTypeFourResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-red band-short me-5" id="bandThreeTypeFourResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-orange band-tall ms-5" id="bandFourTypeFourResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                        </div>
+                        <div class="resistor-band visually-hidden" id="typeFiveResistorBand">
+                            <a class="rounded-0 bg-brown band-tall" id="bandOneTypeFiveResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-black band-short" id="bandTwoTypeFiveResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-red band-short" id="bandThreeTypeFiveResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-orange band-short" id="bandFourTypeFiveResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-blue band-tall ms-5" id="bandFiveTypeFiveResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                        </div>
+                        <div class="resistor-band visually-hidden" id="typeSixResistorBand">
+                            <a class="rounded-0 bg-brown band-tall" id="bandOneTypeSixResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-black band-short" id="bandTwoTypeSixResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-red band-short" id="bandThreeTypeSixResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-orange band-short" id="bandFourTypeSixResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-blue band-short ms-5" id="bandFiveTypeSixResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                            <a class="rounded-0 bg-gold band-tall" id="bandSixTypeSixResistorBand"
+                                data-bs-toggle="modal" data-bs-target="#modalResistorColor"></a>
+                        </div>
+                        <div class="resistor-band visually-hidden" id="typeSMDResistorBand">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Optional JavaScript; choose one of the two! -->
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+
+        <!-- Modal Resistor Color -->
+        <div class="modal fade" id="modalResistorColor" tabindex="-1" aria-labelledby="band-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 rounded-1">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBandTitle">Band 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="resistor-band-color">
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-black"
+                            id="btnColorBlack" role="alert">
+                            <div class="row">
+                                <div class="col-3">Black</div>
+                                <div class="col-3 text-center" id="valueColorBlack">0</div>
+                                <div class="col-6 rounded-1 btn btn-black border-black" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-brown"
+                            id="btnColorBrown" role="alert">
+                            <div class="row">
+                                <div class="col-3">Brown</div>
+                                <div class="col-3 text-center" id="valueColorBrown">1</div>
+                                <div class="col-6 rounded-1 btn btn-brown border-brown" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-red" id="btnColorRed"
+                            role="alert">
+                            <div class="row">
+                                <div class="col-3">Red</div>
+                                <div class="col-3 text-center" id="valueColorRed">2</div>
+                                <div class="col-6 rounded-1 btn btn-red border-red" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-orange"
+                            id="btnColorOrange" role="alert">
+                            <div class="row">
+                                <div class="col-3">Orange</div>
+                                <div class="col-3 text-center" id="valueColorOrange">3</div>
+                                <div class="col-6 rounded-1 btn btn-orange border-orange" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-yellow"
+                            id="btnColorYellow" role="alert">
+                            <div class="row">
+                                <div class="col-3">Yellow</div>
+                                <div class="col-3 text-center" id="valueColorYellow">4</div>
+                                <div class="col-6 rounded-1 btn btn-yellow border-yellow" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-green"
+                            id="btnColorGreen" role="alert">
+                            <div class="row">
+                                <div class="col-3">Green</div>
+                                <div class="col-3 text-center" id="valueColorGreen">5</div>
+                                <div class="col-6 rounded-1 btn btn-green border-green" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-blue" id="btnColorBlue"
+                            role="alert">
+                            <div class="row">
+                                <div class="col-3">Blue</div>
+                                <div class="col-3 text-center" id="valueColorBlue">6</div>
+                                <div class="col-6 rounded-1 btn btn-blue border-blue" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-purple"
+                            id="btnColorPurple" role="alert">
+                            <div class="row">
+                                <div class="col-3">Purple</div>
+                                <div class="col-3 text-center" id="valueColorPurple">7</div>
+                                <div class="col-6 rounded-1 btn btn-purple border-purple" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-gray" id="btnColorGray"
+                            role="alert">
+                            <div class="row">
+                                <div class="col-3">Gray</div>
+                                <div class="col-3 text-center" id="valueColorGray">8</div>
+                                <div class="col-6 rounded-1 btn btn-gray border-gray" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-white"
+                            id="btnColorWhite" role="alert">
+                            <div class="row">
+                                <div class="col-3">White</div>
+                                <div class="col-3 text-center" id="valueColorWhite">9</div>
+                                <div class="col-6 rounded-1 btn btn-white border-silver" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-gold" id="btnColorGold"
+                            role="alert">
+                            <div class="row">
+                                <div class="col-3">Gold</div>
+                                <div class="col-3 text-center" id="valueColorGold">1</div>
+                                <div class="col-6 rounded-1 btn btn-gold border-gold" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-silver"
+                            id="btnColorSilver" role="alert">
+                            <div class="row">
+                                <div class="col-3">Silver</div>
+                                <div class="col-3 text-center" id="valueColorSilver">10</div>
+                                <div class="col-6 rounded-1 btn btn-silver border-silver" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                        <div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-white" id="btnNoColor"
+                            role="alert">
+                            <div class="row">
+                                <div class="col-3">No Color</div>
+                                <div class="col-3 text-center" id="valueNoColor">20</div>
+                                <div class="col-6 rounded-1 btn btn-white border-white" data-bs-dismiss="modal"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Resistor Color End-->
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

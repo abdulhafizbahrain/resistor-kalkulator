@@ -1,0 +1,80 @@
+
+
+
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+
+
+$custom-theme-colors: (
+    "black" : $black,
+    "in-black" : $gray-500,
+    "brown" : $orange-800,
+    "in-brown" : #c2855c,
+    "red" : $red,
+    "in-red" : $red-200,
+    "orange" : $orange-500,
+    "in-orange" : $orange-200,
+    "yellow" : $yellow-500,
+    "in-yellow" : $yellow-200,
+    "green" : $green,
+    "in-green" : $green-200,
+    "blue" : $blue,
+    "in-blue" : $blue-200,
+    "purple" : $indigo,
+    "in-purple" : $indigo-200,
+    "gray" : $gray-600,
+    "in-gray" : $gray-400,
+    "gold" : $yellow-600,
+    "in-gold" : $yellow-200,
+    "silver" : $gray-400,
+    "in-silver" : $gray-900,
+    "white" : $white,
+    "in-white" : $gray-600
+    );
+    
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+.resistor-container{
+    position: relative;
+}
+
+.resistor-band{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14%;
+    padding-right: 14%;
+    transition: all 500ms;
+    
+}
+
+.band-short, .band-tall{
+    width: 7%;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.band-short:hover, .band-tall:hover{
+    opacity: 80%;
+}
+
+.band-short{
+    height: 68.7%;
+}
+
+.band-tall{
+    height: 100%;
+}
+
+.margin-left{
+    margin-left : 10%;
+}
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';

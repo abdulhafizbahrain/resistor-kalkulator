@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>Resistor Calculator</title>
+</head>
+
+<body>
+
+    <!-- Main 6 Band -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="resistor-container">
+                        <div class="resistor-img">
+                            <img src="/img/Resistor.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="resistor-band">
+                            <a class="bg-brown band-tall" data-bs-toggle="modal" data-bs-target="#band-1"></a>
+                            <a class="bg-black band-short" data-bs-toggle="modal" data-bs-target="#band-2"></a>
+                            <a class="bg-red band-short" data-bs-toggle="modal" data-bs-target="#band-3"></a>
+                            <a class="bg-orange band-short" data-bs-toggle="modal" data-bs-target="#band-4"></a>
+                            <a class="bg-blue band-short margin-left" data-bs-toggle="modal"
+                                data-bs-target="#band-5"></a>
+                            <a class="bg-gold band-tall" data-bs-toggle="modal" data-bs-target="#band-6"></a>
+                        </div>
+
+
+
+
+                        <!-- Modal -->
+                        <!-- Resistor Band 1 -->
+                        <div class="modal fade" id="band-1" tabindex="-1" aria-labelledby="band-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" scope="col" colspan="3">
+                                                    <h1>Choose Band 1 Color</h1>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Name Color</th>
+                                                <th class="text-center">Value</th>
+                                                <th class="text-center">Color</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="alert alert-brown" data-bs-dismiss="modal">
+                                                <td>Brown</td>
+                                                <td class="text-center">1</td>
+                                                <td class="bg-brown"></td>
+                                            </tr>
+                                            <tr class="alert alert-red" data-bs-dismiss="modal">
+                                                <td>Red</td>
+                                                <td class="text-center">2</td>
+                                                <td class="bg-red"></td>
+                                            </tr>
+                                            <tr class="alert alert-orange" data-bs-dismiss="modal">
+                                                <td>Orange</td>
+                                                <td class="text-center">3</td>
+                                                <td class="bg-orange"></td>
+                                            </tr>
+                                            <tr class="alert alert-yellow" data-bs-dismiss="modal">
+                                                <td>Yellow</td>
+                                                <td class="text-center">4</td>
+                                                <td class="bg-yellow"></td>
+                                            </tr>
+                                            <tr class="alert alert-green" data-bs-dismiss="modal">
+                                                <td>Green</td>
+                                                <td class="text-center">5</td>
+                                                <td class="bg-green"></td>
+                                            </tr>
+                                            <tr class="alert alert-blue" data-bs-dismiss="modal">
+                                                <td>Blue</td>
+                                                <td class="text-center">6</td>
+                                                <td class="bg-blue"></td>
+                                            </tr>
+                                            <tr class="alert alert-purple" data-bs-dismiss="modal">
+                                                <td>Purple</td>
+                                                <td class="text-center">7</td>
+                                                <td class="bg-purple"></td>
+                                            </tr>
+                                            <tr class="alert alert-gray" data-bs-dismiss="modal">
+                                                <td>Gray</td>
+                                                <td class="text-center">8</td>
+                                                <td class="bg-gray"></td>
+                                            </tr>
+                                            <tr class="alert alert-white" data-bs-dismiss="modal">
+                                                <td>White</td>
+                                                <td class="text-center">9</td>
+                                                <td class="bg-white"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resistor Band 1 End-->
+
+
+                        <!-- Resistor Band 2 -->
+                        <div class="modal fade" id="band-2" tabindex="-1" aria-labelledby="band-2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" scope="col" colspan="3">
+                                                    <h1>Choose Band 1 Color</h1>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Name Color</th>
+                                                <th class="text-center">Value</th>
+                                                <th class="text-center">Color</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="alert alert-black" data-bs-dismiss="modal">
+                                                <td>Black</td>
+                                                <td class="text-center">0</td>
+                                                <td class="bg-black"></td>
+                                            </tr>
+                                            <tr class="alert alert-brown" data-bs-dismiss="modal">
+                                                <td>Brown</td>
+                                                <td class="text-center">1</td>
+                                                <td class="bg-brown"></td>
+                                            </tr>
+                                            <tr class="alert alert-red" data-bs-dismiss="modal">
+                                                <td>Red</td>
+                                                <td class="text-center">2</td>
+                                                <td class="bg-red"></td>
+                                            </tr>
+                                            <tr class="alert alert-orange" data-bs-dismiss="modal">
+                                                <td>Orange</td>
+                                                <td class="text-center">3</td>
+                                                <td class="bg-orange"></td>
+                                            </tr>
+                                            <tr class="alert alert-yellow" data-bs-dismiss="modal">
+                                                <td>Yellow</td>
+                                                <td class="text-center">4</td>
+                                                <td class="bg-yellow"></td>
+                                            </tr>
+                                            <tr class="alert alert-green" data-bs-dismiss="modal">
+                                                <td>Green</td>
+                                                <td class="text-center">5</td>
+                                                <td class="bg-green"></td>
+                                            </tr>
+                                            <tr class="alert alert-blue" data-bs-dismiss="modal">
+                                                <td>Blue</td>
+                                                <td class="text-center">6</td>
+                                                <td class="bg-blue"></td>
+                                            </tr>
+                                            <tr class="alert alert-purple" data-bs-dismiss="modal">
+                                                <td>Purple</td>
+                                                <td class="text-center">7</td>
+                                                <td class="bg-purple"></td>
+                                            </tr>
+                                            <tr class="alert alert-gray" data-bs-dismiss="modal">
+                                                <td>Gray</td>
+                                                <td class="text-center">8</td>
+                                                <td class="bg-gray"></td>
+                                            </tr>
+                                            <tr class="alert alert-white" data-bs-dismiss="modal">
+                                                <td>White</td>
+                                                <td class="text-center">9</td>
+                                                <td class="bg-white"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resistor Band 2 End-->
+
+                        <!-- Resistor Band 3 -->
+                        <div class="modal fade" id="band-3" tabindex="-1" aria-labelledby="band-3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" scope="col" colspan="3">
+                                                    <h1>Choose Band 1 Color</h1>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Name Color</th>
+                                                <th class="text-center">Value</th>
+                                                <th class="text-center">Color</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="alert alert-black" data-bs-dismiss="modal">
+                                                <td>Black</td>
+                                                <td class="text-center">0</td>
+                                                <td class="bg-black"></td>
+                                            </tr>
+                                            <tr class="alert alert-brown" data-bs-dismiss="modal">
+                                                <td>Brown</td>
+                                                <td class="text-center">1</td>
+                                                <td class="bg-brown"></td>
+                                            </tr>
+                                            <tr class="alert alert-red" data-bs-dismiss="modal">
+                                                <td>Red</td>
+                                                <td class="text-center">2</td>
+                                                <td class="bg-red"></td>
+                                            </tr>
+                                            <tr class="alert alert-orange" data-bs-dismiss="modal">
+                                                <td>Orange</td>
+                                                <td class="text-center">3</td>
+                                                <td class="bg-orange"></td>
+                                            </tr>
+                                            <tr class="alert alert-yellow" data-bs-dismiss="modal">
+                                                <td>Yellow</td>
+                                                <td class="text-center">4</td>
+                                                <td class="bg-yellow"></td>
+                                            </tr>
+                                            <tr class="alert alert-green" data-bs-dismiss="modal">
+                                                <td>Green</td>
+                                                <td class="text-center">5</td>
+                                                <td class="bg-green"></td>
+                                            </tr>
+                                            <tr class="alert alert-blue" data-bs-dismiss="modal">
+                                                <td>Blue</td>
+                                                <td class="text-center">6</td>
+                                                <td class="bg-blue"></td>
+                                            </tr>
+                                            <tr class="alert alert-purple" data-bs-dismiss="modal">
+                                                <td>Purple</td>
+                                                <td class="text-center">7</td>
+                                                <td class="bg-purple"></td>
+                                            </tr>
+                                            <tr class="alert alert-gray" data-bs-dismiss="modal">
+                                                <td>Gray</td>
+                                                <td class="text-center">8</td>
+                                                <td class="bg-gray"></td>
+                                            </tr>
+                                            <tr class="alert alert-white" data-bs-dismiss="modal">
+                                                <td>White</td>
+                                                <td class="text-center">9</td>
+                                                <td class="bg-white"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resistor Band 3 End-->
+
+                        <!-- Resistor Band 4 -->
+                        <div class="modal fade" id="band-4" tabindex="-1" aria-labelledby="band-4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" scope="col" colspan="3">
+                                                    <h1>Choose Band 1 Color</h1>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Name Color</th>
+                                                <th class="text-center">Value</th>
+                                                <th class="text-center">Color</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="alert alert-black" data-bs-dismiss="modal">
+                                                <td>Black</td>
+                                                <td class="text-center">0</td>
+                                                <td class="bg-black"></td>
+                                            </tr>
+                                            <tr class="alert alert-brown" data-bs-dismiss="modal">
+                                                <td>Brown</td>
+                                                <td class="text-center">1</td>
+                                                <td class="bg-brown"></td>
+                                            </tr>
+                                            <tr class="alert alert-red" data-bs-dismiss="modal">
+                                                <td>Red</td>
+                                                <td class="text-center">2</td>
+                                                <td class="bg-red"></td>
+                                            </tr>
+                                            <tr class="alert alert-orange" data-bs-dismiss="modal">
+                                                <td>Orange</td>
+                                                <td class="text-center">3</td>
+                                                <td class="bg-orange"></td>
+                                            </tr>
+                                            <tr class="alert alert-yellow" data-bs-dismiss="modal">
+                                                <td>Yellow</td>
+                                                <td class="text-center">4</td>
+                                                <td class="bg-yellow"></td>
+                                            </tr>
+                                            <tr class="alert alert-green" data-bs-dismiss="modal">
+                                                <td>Green</td>
+                                                <td class="text-center">5</td>
+                                                <td class="bg-green"></td>
+                                            </tr>
+                                            <tr class="alert alert-blue" data-bs-dismiss="modal">
+                                                <td>Blue</td>
+                                                <td class="text-center">6</td>
+                                                <td class="bg-blue"></td>
+                                            </tr>
+                                            <tr class="alert alert-purple" data-bs-dismiss="modal">
+                                                <td>Purple</td>
+                                                <td class="text-center">7</td>
+                                                <td class="bg-purple"></td>
+                                            </tr>
+                                            <tr class="alert alert-gray" data-bs-dismiss="modal">
+                                                <td>Gray</td>
+                                                <td class="text-center">8</td>
+                                                <td class="bg-gray"></td>
+                                            </tr>
+                                            <tr class="alert alert-white" data-bs-dismiss="modal">
+                                                <td>White</td>
+                                                <td class="text-center">9</td>
+                                                <td class="bg-white"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resistor Band 4 End-->
+
+                        <!-- Resistor Band 5 -->
+                        <div class="modal fade" id="band-5" tabindex="-1" aria-labelledby="band-5" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" scope="col" colspan="3">
+                                                    <h1>Choose Band 1 Color</h1>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Name Color</th>
+                                                <th class="text-center">Value</th>
+                                                <th class="text-center">Color</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="alert alert-black" data-bs-dismiss="modal">
+                                                <td>Black</td>
+                                                <td class="text-center">1%</td>
+                                                <td class="bg-black"></td>
+                                            </tr>
+                                            <tr class="alert alert-brown" data-bs-dismiss="modal">
+                                                <td>Brown</td>
+                                                <td class="text-center">2%</td>
+                                                <td class="bg-brown"></td>
+                                            </tr>
+                                            <tr class="alert alert-green" data-bs-dismiss="modal">
+                                                <td>Green</td>
+                                                <td class="text-center">0.5%</td>
+                                                <td class="bg-green"></td>
+                                            </tr>
+                                            <tr class="alert alert-blue" data-bs-dismiss="modal">
+                                                <td>Blue</td>
+                                                <td class="text-center">0.25%</td>
+                                                <td class="bg-blue"></td>
+                                            </tr>
+                                            <tr class="alert alert-purple" data-bs-dismiss="modal">
+                                                <td>Purple</td>
+                                                <td class="text-center">0.1%</td>
+                                                <td class="bg-purple"></td>
+                                            </tr>
+                                            <tr class="alert alert-gray" data-bs-dismiss="modal">
+                                                <td>Gray</td>
+                                                <td class="text-center">0.05%</td>
+                                                <td class="bg-gray"></td>
+                                            </tr>
+                                            <tr class="alert alert-gold" data-bs-dismiss="modal">
+                                                <td>Gold</td>
+                                                <td class="text-center">5%</td>
+                                                <td class="bg-gold"></td>
+                                            </tr>
+                                            <tr class="alert alert-silver" data-bs-dismiss="modal">
+                                                <td>Silver</td>
+                                                <td class="text-center">10%</td>
+                                                <td class="bg-silver"></td>
+                                            </tr>
+                                            <tr class="alert alert-white" data-bs-dismiss="modal">
+                                                <td>No Color</td>
+                                                <td class="text-center">20%</td>
+                                                <td class="bg-white"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resistor Band 5 End-->
+
+                        <!-- Resistor Band 6 -->
+                        <div class="modal fade" id="band-6" tabindex="-1" aria-labelledby="band-6" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" scope="col" colspan="3">
+                                                    <h1>Choose Band 1 Color</h1>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Name Color</th>
+                                                <th class="text-center">Value</th>
+                                                <th class="text-center">Color</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr class="alert alert-black" data-bs-dismiss="modal">
+                                                <td>Black</td>
+                                                <td class="text-center">250ppm/K</td>
+                                                <td class="bg-black"></td>
+                                            </tr>
+                                            <tr class="alert alert-brown" data-bs-dismiss="modal">
+                                                <td>Brown</td>
+                                                <td class="text-center">150ppm/K</td>
+                                                <td class="bg-brown"></td>
+                                            </tr>
+                                            <tr class="alert alert-red" data-bs-dismiss="modal">
+                                                <td>Red</td>
+                                                <td class="text-center">50ppm/K</td>
+                                                <td class="bg-red"></td>
+                                            </tr>
+                                            <tr class="alert alert-orange" data-bs-dismiss="modal">
+                                                <td>Orange</td>
+                                                <td class="text-center">15ppm/K</td>
+                                                <td class="bg-orange"></td>
+                                            </tr>
+                                            <tr class="alert alert-yellow" data-bs-dismiss="modal">
+                                                <td>Yellow</td>
+                                                <td class="text-center">25ppm/K</td>
+                                                <td class="bg-yellow"></td>
+                                            </tr>
+                                            <tr class="alert alert-green" data-bs-dismiss="modal">
+                                                <td>Green</td>
+                                                <td class="text-center">20ppm/K</td>
+                                                <td class="bg-green"></td>
+                                            </tr>
+                                            <tr class="alert alert-blue" data-bs-dismiss="modal">
+                                                <td>Blue</td>
+                                                <td class="text-center">10ppm/K</td>
+                                                <td class="bg-blue"></td>
+                                            </tr>
+                                            <tr class="alert alert-purple" data-bs-dismiss="modal">
+                                                <td>Purple</td>
+                                                <td class="text-center">5ppm/K</td>
+                                                <td class="bg-purple"></td>
+                                            </tr>
+                                            <tr class="alert alert-gray" data-bs-dismiss="modal">
+                                                <td>Gray</td>
+                                                <td class="text-center">1ppm/K</td>
+                                                <td class="bg-gray"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resistor Band 5 End-->
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Main 6 Band End -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
