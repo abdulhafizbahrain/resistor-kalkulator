@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.no-color {
+  background-color: transparent !important;
+}
+
 .resistor-container {
   position: relative;
 }
@@ -85,7 +89,7 @@
   --bs-in-blue: #9ec5fe;
   --bs-purple: #6610f2;
   --bs-in-purple: #c29ffa;
-  --bs-gray: #6c757d;
+  --bs-gray: #adb5bd;
   --bs-in-gray: #ced4da;
   --bs-gold: #cc9a06;
   --bs-in-gold: #ffe69c;
@@ -117,7 +121,7 @@
   --bs-in-blue-rgb: 158, 197, 254;
   --bs-purple-rgb: 102, 16, 242;
   --bs-in-purple-rgb: 194, 159, 250;
-  --bs-gray-rgb: 108, 117, 125;
+  --bs-gray-rgb: 173, 181, 189;
   --bs-in-gray-rgb: 206, 212, 218;
   --bs-gold-rgb: 204, 154, 6;
   --bs-in-gold-rgb: 255, 230, 156;
@@ -3247,20 +3251,20 @@ textarea.form-control-lg {
 }
 
 .btn-gray {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
-  --bs-btn-hover-border-color: #565e64;
-  --bs-btn-focus-shadow-rgb: 130, 138, 145;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
+  --bs-btn-color: #000;
+  --bs-btn-bg: #adb5bd;
+  --bs-btn-border-color: #adb5bd;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #b9c0c7;
+  --bs-btn-hover-border-color: #b5bcc4;
+  --bs-btn-focus-shadow-rgb: 147, 154, 161;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #bdc4ca;
+  --bs-btn-active-border-color: #b5bcc4;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #adb5bd;
+  --bs-btn-disabled-border-color: #adb5bd;
 }
 
 .btn-in-gray {
@@ -3791,19 +3795,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-gray {
-  --bs-btn-color: #6c757d;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #6c757d;
-  --bs-btn-hover-border-color: #6c757d;
-  --bs-btn-focus-shadow-rgb: 108, 117, 125;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #6c757d;
-  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-color: #adb5bd;
+  --bs-btn-border-color: #adb5bd;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #adb5bd;
+  --bs-btn-hover-border-color: #adb5bd;
+  --bs-btn-focus-shadow-rgb: 173, 181, 189;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #adb5bd;
+  --bs-btn-active-border-color: #adb5bd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-color: #adb5bd;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-border-color: #adb5bd;
   --bs-gradient: none;
 }
 
@@ -5746,12 +5750,12 @@ textarea.form-control-lg {
 }
 
 .alert-gray {
-  --bs-alert-color: #41464b;
-  --bs-alert-bg: #e2e3e5;
-  --bs-alert-border-color: #d3d6d8;
+  --bs-alert-color: #686d71;
+  --bs-alert-bg: #eff0f2;
+  --bs-alert-border-color: #e6e9eb;
 }
 .alert-gray .alert-link {
-  color: #34383c;
+  color: #53575a;
 }
 
 .alert-in-gray {
@@ -6414,17 +6418,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-gray {
-  color: #41464b;
-  background-color: #e2e3e5;
+  color: #686d71;
+  background-color: #eff0f2;
 }
 .list-group-item-gray.list-group-item-action:hover, .list-group-item-gray.list-group-item-action:focus {
-  color: #41464b;
-  background-color: #cbccce;
+  color: #686d71;
+  background-color: #d7d8da;
 }
 .list-group-item-gray.list-group-item-action.active {
   color: #fff;
-  background-color: #41464b;
-  border-color: #41464b;
+  background-color: #686d71;
+  border-color: #686d71;
 }
 
 .list-group-item-in-gray {
@@ -8274,8 +8278,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-gray {
-  color: #fff !important;
-  background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
+  color: #000 !important;
+  background-color: RGBA(173, 181, 189, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-in-gray {
@@ -8466,10 +8470,10 @@ textarea.form-control-lg {
 }
 
 .link-gray {
-  color: #6c757d !important;
+  color: #adb5bd !important;
 }
 .link-gray:hover, .link-gray:focus {
-  color: #565e64 !important;
+  color: #bdc4ca !important;
 }
 
 .link-in-gray {

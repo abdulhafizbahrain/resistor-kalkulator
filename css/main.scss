@@ -23,7 +23,7 @@ $custom-theme-colors: (
     "in-blue" : $blue-200,
     "purple" : $indigo,
     "in-purple" : $indigo-200,
-    "gray" : $gray-600,
+    "gray" : $gray-500,
     "in-gray" : $gray-400,
     "gold" : $yellow-600,
     "in-gold" : $yellow-200,
@@ -34,6 +34,10 @@ $custom-theme-colors: (
     );
     
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+.no-color{
+    background-color: transparent !important;
+}
 
 .resistor-container{
     position: relative;
