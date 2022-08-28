@@ -35,7 +35,7 @@ function showBandColor(showData) {
 
 
     for (startIndex; startIndex < data.length; startIndex++){
-        output = output + '<div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-' + data[startIndex].toLowerCase() + '" role="alert"> <div class="row"><div class="col-3">' + data[startIndex] + '</div><div class="col-3 text-center" id="valueColor' + data[startIndex] + '">' + dataValue[startIndex] + '</div><div class="col-6 rounded-1 btn btn-' + data[startIndex].toLowerCase() + '" id="btnColor' + data[startIndex]+ '" data-bs-dismiss="modal"></div></div></div>';
+        output = output + '<div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-' + data[startIndex].toLowerCase() + '" id="btnColor' + data[startIndex] + '"  role="alert"> <div class="row"><div class="col-3">' + data[startIndex] + '</div><div class="col-3 text-center" id="valueColor' + data[startIndex] + '">' + dataValue[startIndex] + '</div><div class="col-6 rounded-1 btn btn-' + data[startIndex].toLowerCase() + '" data-bs-dismiss="modal"></div></div></div>';
     } 
     return output;
 }
@@ -73,13 +73,8 @@ for (let index = 0; index < typeSixResistorBand.length; index++){
 function changeColorBandActive(colorName) {
     bandActive.classList.remove('bg-black', 'bg-brown', 'bg-red', 'bg-orange', 'bg-yellow', 'bg-green', 'bg-blue', 'bg-gray', 'bg-white', 'bg-gold', 'bg-silver', 'bg-no-color', 'bg-transparent');
     bandActive.classList.add(colorName);
+    console.log(bandActive);
 }
 
-const btnColor = document.querySelectorAll('#btnColor');
-for (let index = 0; index < btnColor.length; index++){
-        btnColor[index].addEventListener('click', function () {
-        changeColorBandActive('bg-gold');
-    });
-}
 
 // Modal choose color end
