@@ -48,29 +48,10 @@ function showBandColor(showData) {
 }
 
 var bandActive;
-const bandOneTypeFourResistorBand = document.getElementById('bandOneTypeFourResistorBand');
-const bandTwoTypeFourResistorBand = document.getElementById('bandTwoTypeFourResistorBand');
-const bandThreeTypeFourResistorBand = document.getElementById('bandThreeTypeFourResistorBand');
-const bandFourTypeFourResistorBand = document.getElementById('bandFourTypeFourResistorBand');
-bandOneTypeFourResistorBand.addEventListener('click', function () {
-    resistorBandColor.innerHTML = showBandColor("firstFigure");
-    bandActive = bandOneTypeFourResistorBand;
-});
+const TypeFourResistorBand = document.querySelectorAll('#typeFourResistorBand > #band');
 
-bandTwoTypeFourResistorBand.addEventListener('click', function () {
-    resistorBandColor.innerHTML = showBandColor("secondFigure");
-    bandActive = bandTwoTypeFourResistorBand;
-});
+console.log(TypeFourResistorBand[1]);
 
-bandThreeTypeFourResistorBand.addEventListener('click', function () {
-    resistorBandColor.innerHTML = showBandColor("multipier");
-    bandActive = bandThreeTypeFourResistorBand;
-});
-
-bandFourTypeFourResistorBand.addEventListener('click', function () {
-    resistorBandColor.innerHTML = showBandColor("tolerance");
-    bandActive = bandFourTypeFourResistorBand;
-});
 
 
 const bandOneTypeFiveResistorBand = document.getElementById('bandOneTypeFiveResistorBand');
