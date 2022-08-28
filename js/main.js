@@ -1,5 +1,13 @@
 var bandActive;
 
+var collorFigure = ['Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Gray', 'White'];
+var collorFigureValue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var collorMultipier = ['Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Gray', 'White', 'Gold', 'Silver'];
+var collorMultipierValue = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 0.1, 0.01];
+var collorTolerance = ['Brown', 'Red', 'Orange', 'Blue', 'Purple', 'Gray', 'Gold', 'Silver', 'opacity-0'];
+var collorToleranceValue = [1, 2, 0.5, 0.25, 0.10, 0.05, 5, 10, 20];
+var collorTemperature = ['Brown', 'Red', 'Orange', 'Yellow', 'Blue', 'Purple'];
+var collorTemperatureValue = [100, 50, 15, 25, 10, 5];
 
 
 const modalBandTitle = document.getElementById('modalBandTitle');
@@ -71,80 +79,20 @@ navTypeSMDResistorBand.addEventListener('click', function () {
 
 
 // Show color and value
-const valueColorBlack = document.getElementById('valueColorBlack');
-const valueColorBrown = document.getElementById('valueColorBrown');
-const valueColorRed = document.getElementById('valueColorRed');
-const valueColorOrange = document.getElementById('valueColorOrange');
-const valueColorYellow = document.getElementById('valueColorYellow');
-const valueColorGreen = document.getElementById('valueColorGreen');
-const valueColorBlue = document.getElementById('valueColorBlue');
-const valueColorPurple = document.getElementById('valueColorPurple');
-const valueColorGray = document.getElementById('valueColorGray');
-const valueColorWhite = document.getElementById('valueColorWhite');
-const valueColorGold = document.getElementById('valueColorGold');
-const valueColorSilver = document.getElementById('valueColorSilver');
-const valueNoColor = document.getElementById('valueNoColor');
 
+const btnColor = document.querySelectorAll('#btnColor')
 function showColor(bandName) {
-    var value = [];
-    btnColorBlack.classList.remove('visually-hidden');
-    btnColorBrown.classList.remove('visually-hidden');
-    btnColorRed.classList.remove('visually-hidden');
-    btnColorOrange.classList.remove('visually-hidden');
-    btnColorYellow.classList.remove('visually-hidden');
-    btnColorGreen.classList.remove('visually-hidden');
-    btnColorBlue.classList.remove('visually-hidden');
-    btnColorPurple.classList.remove('visually-hidden');
-    btnColorGray.classList.remove('visually-hidden');
-    btnColorWhite.classList.remove('visually-hidden');
-    btnColorGold.classList.remove('visually-hidden');
-    btnColorSilver.classList.remove('visually-hidden');
-    btnNoColor.classList.remove('visually-hidden');
-
-    if (bandName == "figure") {
-        btnColorGold.classList.add('visually-hidden');
-        btnColorSilver.classList.add('visually-hidden');
-        btnNoColor.classList.add('visually-hidden');
-        value = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0];
+    var startIndex;
+    var endIndex;
+    var data;
+    var dataValue;
+    if (bandName == "firstFigure") {
+        startIndex = 1;
+        endIndex = 10;
+        data = collorFigure;
+        dataValue = collorFigureValue;
     }
 
-    if (bandName == "multipier") {
-        btnNoColor.classList.add('visually-hidden');
-        value = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 0.1, 0.01, 0];
-    }
-
-    if (bandName == "tolerance") {
-        btnColorBlack.classList.add('visually-hidden');
-        btnColorOrange.classList.add('visually-hidden');
-        btnColorYellow.classList.add('visually-hidden');
-        btnColorWhite.classList.add('visually-hidden');
-        value = [0, 1, 2, 0, 0, 0.5, 0.25, 0.1, 0.05, 0, 5, 10, 20];
-    }
-
-    if (bandName == "temperature") {
-        btnColorBlack.classList.add('visually-hidden');
-        btnColorGreen.classList.add('visually-hidden');
-        btnColorGray.classList.add('visually-hidden');
-        btnColorWhite.classList.add('visually-hidden');
-        btnColorGold.classList.add('visually-hidden');
-        btnColorSilver.classList.add('visually-hidden');
-        btnNoColor.classList.add('visually-hidden');
-        value = [0, 100, 50, 15, 25, 0, 10, 5, 0, 0, 0, 0, 0];
-    }
-
-    valueColorBlack.innerText = value[0];
-    valueColorBrown.innerText = value[1];
-    valueColorRed.innerText = value[2];
-    valueColorOrange.innerText = value[3];
-    valueColorYellow.innerText = value[4];
-    valueColorGreen.innerText = value[5];
-    valueColorBlue.innerText = value[6];
-    valueColorPurple.innerText = value[7];
-    valueColorGray.innerText = value[8];
-    valueColorWhite.innerText = value[9];
-    valueColorGold.innerText = value[10];
-    valueColorSilver.innerText = value[11];
-    valueNoColor.innerText = value[12];
 }
 // Show color and value end
 
@@ -156,7 +104,7 @@ const bandFourTypeFourResistorBand = document.getElementById('bandFourTypeFourRe
 
 bandOneTypeFourResistorBand.addEventListener('click', function () {
     showColor('figure');
-    btnColorBlack.classList.add('visually-hidden');
+    // btnColorBlack.classList.add('visually-hidden');
     bandActive = bandOneTypeFourResistorBand;
 });
 
@@ -285,57 +233,57 @@ function changeColorBandActive(colorName) {
     bandActive.classList.add(colorName);
 }
 
-btnColorBlack.addEventListener('click', function () {
-    changeColorBandActive('bg-black');
-});
+// btnColorBlack.addEventListener('click', function () {
+//     changeColorBandActive('bg-black');
+// });
 
-btnColorBrown.addEventListener('click', function () {
-    changeColorBandActive('bg-brown');
-});
+// btnColorBrown.addEventListener('click', function () {
+//     changeColorBandActive('bg-brown');
+// });
 
-btnColorRed.addEventListener('click', function () {
-    changeColorBandActive('bg-red');
-});
+// btnColorRed.addEventListener('click', function () {
+//     changeColorBandActive('bg-red');
+// });
 
-btnColorOrange.addEventListener('click', function () {
-    changeColorBandActive('bg-orange');
-});
+// btnColorOrange.addEventListener('click', function () {
+//     changeColorBandActive('bg-orange');
+// });
 
-btnColorYellow.addEventListener('click', function () {
-    changeColorBandActive('bg-yellow');
-});
+// btnColorYellow.addEventListener('click', function () {
+//     changeColorBandActive('bg-yellow');
+// });
 
-btnColorGreen.addEventListener('click', function () {
-    changeColorBandActive('bg-green');
-});
+// btnColorGreen.addEventListener('click', function () {
+//     changeColorBandActive('bg-green');
+// });
 
-btnColorBlue.addEventListener('click', function () {
-    changeColorBandActive('bg-blue');
-});
+// btnColorBlue.addEventListener('click', function () {
+//     changeColorBandActive('bg-blue');
+// });
 
-btnColorPurple.addEventListener('click', function () {
-    changeColorBandActive('bg-purple');
-});
+// btnColorPurple.addEventListener('click', function () {
+//     changeColorBandActive('bg-purple');
+// });
 
-btnColorGray.addEventListener('click', function () {
-    changeColorBandActive('bg-gray');
-});
+// btnColorGray.addEventListener('click', function () {
+//     changeColorBandActive('bg-gray');
+// });
 
-btnColorWhite.addEventListener('click', function () {
-    changeColorBandActive('bg-white');
-});
+// btnColorWhite.addEventListener('click', function () {
+//     changeColorBandActive('bg-white');
+// });
 
-btnColorGold.addEventListener('click', function () {
-    changeColorBandActive('bg-gold');
-});
+// btnColorGold.addEventListener('click', function () {
+//     changeColorBandActive('bg-gold');
+// });
 
-btnColorSilver.addEventListener('click', function () {
-    changeColorBandActive('bg-silver');
-});
+// btnColorSilver.addEventListener('click', function () {
+//     changeColorBandActive('bg-silver');
+// });
 
-btnNoColor.addEventListener('click', function () {
-    changeColorBandActive('bg-transparent');
-});
+// btnNoColor.addEventListener('click', function () {
+//     changeColorBandActive('bg-transparent');
+// });
 
 // Modal choose color end
 
