@@ -23,9 +23,6 @@ const navTypeFiveResistorBand = document.getElementById('navTypeFiveResistorBand
 const navTypeSixResistorBand = document.getElementById('navTypeSixResistorBand');
 const navTypeSMDResistor = document.getElementById('navTypeSMDResistor');
 
-const typeFourResistorBand = document.getElementById('typeFourResistorBand');
-const typeFiveResistorBand = document.getElementById('typeFiveResistorBand');
-const typeSixResistorBand = document.getElementById('typeSixResistorBand');
 const typeSMDResistor = document.getElementById('typeSMDResistor');
 
 function inactiveNav() {
@@ -96,107 +93,67 @@ function showColor(bandName) {
 }
 // Show color and value end
 
-// Band type four
-const bandOneTypeFourResistorBand = document.getElementById('bandOneTypeFourResistorBand');
-const bandTwoTypeFourResistorBand = document.getElementById('bandTwoTypeFourResistorBand');
-const bandThreeTypeFourResistorBand = document.getElementById('bandThreeTypeFourResistorBand');
-const bandFourTypeFourResistorBand = document.getElementById('bandFourTypeFourResistorBand');
-
-bandOneTypeFourResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    // btnColorBlack.classList.add('visually-hidden');
-    bandActive = bandOneTypeFourResistorBand;
-});
-
-bandTwoTypeFourResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    bandActive = bandTwoTypeFourResistorBand;
-});
-
-bandThreeTypeFourResistorBand.addEventListener('click', function () {
-    showColor('multipier');
-    bandActive = bandThreeTypeFourResistorBand;
-});
-
-bandFourTypeFourResistorBand.addEventListener('click', function () {
-    showColor('tolerance');
-    bandActive = bandFourTypeFourResistorBand;
-});
-// Band type four end
-
-// Band type six
-const bandOneTypeFiveResistorBand = document.getElementById('bandOneTypeFiveResistorBand');
-const bandTwoTypeFiveResistorBand = document.getElementById('bandTwoTypeFiveResistorBand');
-const bandThreeTypeFiveResistorBand = document.getElementById('bandThreeTypeFiveResistorBand');
-const bandFourTypeFiveResistorBand = document.getElementById('bandFourTypeFiveResistorBand');
-const bandFiveTypeFiveResistorBand = document.getElementById('bandFiveTypeFiveResistorBand');
-
-bandOneTypeFiveResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    btnColorBlack.classList.add('visually-hidden');
-    bandActive = bandOneTypeFiveResistorBand;
-});
-
-bandTwoTypeFiveResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    bandActive = bandTwoTypeFiveResistorBand;
-});
-
-bandThreeTypeFiveResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    bandActive = bandThreeTypeFiveResistorBand;
-});
-
-bandFourTypeFiveResistorBand.addEventListener('click', function () {
-    showColor('multipier');
-    bandActive = bandFourTypeFiveResistorBand;
-});
-
-bandFiveTypeFiveResistorBand.addEventListener('click', function () {
-    showColor('tolerance');
-    bandActive = bandFiveTypeFiveResistorBand;
-});
-// Band type six end
+var bandTypeFour = ['firstFigure', 'secondFigure', 'multipier', 'tolerance'];
+var bandTypeFive = ['firstFigure', 'secondFigure', 'thridFigure', 'multipier', 'tolerance'];
+var bandTypeSix = ['firstFigure', 'secondFigure', 'thridFigure', 'multipier', 'tolerance', 'temperature'];
 
 
-// Band type six
-const bandOneTypeSixResistorBand = document.getElementById('bandOneTypeSixResistorBand');
-const bandTwoTypeSixResistorBand = document.getElementById('bandTwoTypeSixResistorBand');
-const bandThreeTypeSixResistorBand = document.getElementById('bandThreeTypeSixResistorBand');
-const bandFourTypeSixResistorBand = document.getElementById('bandFourTypeSixResistorBand');
-const bandFiveTypeSixResistorBand = document.getElementById('bandFiveTypeSixResistorBand');
-const bandSixTypeSixResistorBand = document.getElementById('bandSixTypeSixResistorBand');
+const resistorBandColor = document.getElementById('resistorBandColor');
+function showBandColor(showData) {
+    output = '';
+    startIndex = 0;
+    if (showData == "firstFigure") {
+        data = collorFigure;
+        dataValue = collorFigureValue;
+        startIndex = 1;
+    }else if (showData == "secondFigure" || showData == "thridFigure") {
+        data = collorFigure;
+        dataValue = collorFigureValue;
+    }else if (showData == "multipier") {
+        data = collorMultipier;
+        dataValue = collorMultipierValue;
+    }else if (showData == "tolerance") {
+        data = collorTolerance;
+        dataValue = collorToleranceValue;
+    }else if (showData == "temperature") {
+        data = collorTemperature;
+        dataValue = collorTemperatureValue;
+    }
 
-bandOneTypeSixResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    btnColorBlack.classList.add('visually-hidden');
-    bandActive = bandOneTypeSixResistorBand;
-});
 
-bandTwoTypeSixResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    bandActive = bandTwoTypeSixResistorBand;
-});
+    for (startIndex; startIndex < data.length; startIndex++){
+        output = output + '<div class="container rounded-0 m-0 py-1 ps-1 pe-3 border-0 alert alert-' + data[startIndex].toLowerCase() + '" role="alert"> <div class="row"><div class="col-3">' + data[startIndex] + '</div><div class="col-3 text-center" id="valueColor' + data[startIndex] + '">' + dataValue[startIndex] + '</div><div class="col-6 rounded-1 btn btn-' + data[startIndex].toLowerCase() + '" id="btnColor' + data[startIndex]+ '" data-bs-dismiss="modal"></div></div></div>';
+    } 
+    return output;
+}
 
-bandThreeTypeSixResistorBand.addEventListener('click', function () {
-    showColor('figure');
-    bandActive = bandThreeTypeSixResistorBand;
-});
+showBandColor('firstFigure');
 
-bandFourTypeSixResistorBand.addEventListener('click', function () {
-    showColor('multipier');
-    bandActive = bandFourTypeSixResistorBand;
-});
+var bandActive;
+const typeFourResistorBand = document.querySelectorAll('#typeFourResistorBand > a');
+for (let index = 0; index < typeFourResistorBand.length; index++){
+    typeFourResistorBand[index].addEventListener('click', function () {
+        resistorBandColor.innerHTML = showBandColor(bandTypeFour[index]);
+        bandActive = typeFourResistorBand[index];
+    });
+}
 
-bandFiveTypeSixResistorBand.addEventListener('click', function () {
-    showColor('tolerance');
-    bandActive = bandFiveTypeSixResistorBand;
-});
+const typeFiveResistorBand = document.querySelectorAll('#typeFourResistorBand > a');
+for (let index = 0; index < typeFiveResistorBand.length; index++){
+    typeFiveResistorBand[index].addEventListener('click', function () {
+        resistorBandColor.innerHTML = showBandColor(bandTypeFive[index]);
+        bandActive = typeFiveResistorBand[index];
+    });
+}
 
-bandSixTypeSixResistorBand.addEventListener('click', function () {
-    showColor('temperature');
-    bandActive = bandSixTypeSixResistorBand;
-});
+const typeSixResistorBand = document.querySelectorAll('#typeFourResistorBand > a');
+for (let index = 0; index < typeSixResistorBand.length; index++){
+    typeSixResistorBand[index].addEventListener('click', function () {
+        resistorBandColor.innerHTML = showBandColor(bandTypeSix[index]);
+        bandActive = typeSixResistorBand[index];
+    });
+}
+
 // Band type six end
 
 // Formula
