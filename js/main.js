@@ -132,76 +132,10 @@ bandSixTypeSixResistorBand.addEventListener('click', function () {
 
 
 // Modal choose color
-const btnColorBlack = document.getElementById('btnColorBlack');
-const btnColorBrown = document.getElementById('btnColorBrown');
-const btnColorRed = document.getElementById('btnColorRed');
-const btnColorOrange = document.getElementById('btnColorOrange');
-const btnColorYellow = document.getElementById('btnColorYellow');
-const btnColorGreen = document.getElementById('btnColorGreen');
-const btnColorBlue = document.getElementById('btnColorBlue');
-const btnColorPurple = document.getElementById('btnColorPurple');
-const btnColorGray = document.getElementById('btnColorGray');
-const btnColorWhite = document.getElementById('btnColorWhite');
-const btnColorGold = document.getElementById('btnColorGold');
-const btnColorSilver = document.getElementById('btnColorSilver');
-const btnNoColor = document.getElementById('btnNoColor');
 
 function changeColorBandActive(colorName) {
     bandActive.classList.remove('bg-black', 'bg-brown', 'bg-red', 'bg-orange', 'bg-yellow', 'bg-green', 'bg-blue', 'bg-gray', 'bg-white', 'bg-gold', 'bg-silver', 'bg-no-color', 'bg-transparent');
     bandActive.classList.add(colorName);
 }
 
-btnColorBlack.addEventListener('click', function () {
-    changeColorBandActive('bg-black');
-});
-
-btnColorBrown.addEventListener('click', function () {
-    changeColorBandActive('bg-brown');
-});
-
-btnColorRed.addEventListener('click', function () {
-    changeColorBandActive('bg-red');
-});
-
-btnColorOrange.addEventListener('click', function () {
-    changeColorBandActive('bg-orange');
-});
-
-btnColorYellow.addEventListener('click', function () {
-    changeColorBandActive('bg-yellow');
-});
-
-btnColorGreen.addEventListener('click', function () {
-    changeColorBandActive('bg-green');
-});
-
-btnColorBlue.addEventListener('click', function () {
-    changeColorBandActive('bg-blue');
-});
-
-btnColorPurple.addEventListener('click', function () {
-    changeColorBandActive('bg-purple');
-});
-
-btnColorGray.addEventListener('click', function () {
-    changeColorBandActive('bg-gray');
-});
-
-btnColorWhite.addEventListener('click', function () {
-    changeColorBandActive('bg-white');
-});
-
-btnColorGold.addEventListener('click', function () {
-    changeColorBandActive('bg-gold');
-});
-
-btnColorSilver.addEventListener('click', function () {
-    changeColorBandActive('bg-silver');
-});
-
-btnNoColor.addEventListener('click', function () {
-    changeColorBandActive('bg-transparent');
-});
-
-console.log(btnColorBlack);
 // Modal choose color end
