@@ -83,12 +83,12 @@ navTypeSMDResistorBand.addEventListener('click', function () {
 const btnColor = document.querySelectorAll('#btnColor')
 function showColor(bandName) {
     var startIndex;
-    var endIndex;
-    var data;
-    var dataValue;
     if (bandName == "firstFigure") {
         startIndex = 1;
-        endIndex = 10;
+        data = collorFigure;
+        dataValue = collorFigureValue;
+    }else if (bandName == "firstFigure") {
+        startIndex = 1;
         data = collorFigure;
         dataValue = collorFigureValue;
     }
