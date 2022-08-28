@@ -203,4 +203,5 @@ btnNoColor.addEventListener('click', function () {
     changeColorBandActive('bg-transparent');
 });
 
+console.log(btnColorBlack);
 // Modal choose color end
