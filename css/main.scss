@@ -54,14 +54,14 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     justify-content: space-between;
     padding-left: 14%;
     padding-right: 14%;
-    transition: all 500ms;
+    // transition: all 1s;
     
 }
 
 .band-short, .band-tall{
     width: 7%;
     cursor: pointer;
-    transition: all 500ms;
+    transition: all 1s;
 }
 
 .band-short:hover, .band-tall:hover{

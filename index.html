@@ -35,22 +35,19 @@
                         </li>
                     </ul>
 
-                    <div class="alert alert-primary text-center" id="resultTypeFourResistorBand" role="alert">
+                    <div class="alert alert-primary text-center" id="resultValue" role="alert">
                         100k ohm 4
                     </div>
 
-                    <div class="alert alert-primary text-center visually-hidden" id="resultTypeFiveResistorBand"
-                        role="alert">
+                    <div class="alert alert-primary text-center visually-hidden" id="resultValue" role="alert">
                         100k ohm 5
                     </div>
 
-                    <div class="alert alert-primary text-center visually-hidden" id="resultTypeSixResistorBand"
-                        role="alert">
+                    <div class="alert alert-primary text-center visually-hidden" id="resultValue" role="alert">
                         100k ohm 6
                     </div>
 
-                    <div class="alert alert-primary text-center visually-hidden" id="resultTypeSMDResistorBand"
-                        role="alert">
+                    <div class="alert alert-primary text-center visually-hidden" id="resultValue" role="alert">
                         100k ohm SMD
                     </div>
 
@@ -70,29 +67,29 @@
                                     data-bs-target="#modalResistorColor"></a>
                             </div>
                             <div class="resistor-band visually-hidden" id="typeFiveResistorBand">
-                                <a class="rounded-0 bg-brown band-tall" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-brown band-tall" aria-valuenow="1" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-black band-short" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-black band-short" aria-valuenow="0" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-red band-short" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-red band-short" aria-valuenow="2" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-orange band-short" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-orange band-short" aria-valuenow="1000" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-blue band-tall ms-5" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-blue band-tall ms-5" aria-valuenow="0.25" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
                             </div>
                             <div class="resistor-band visually-hidden" id="typeSixResistorBand">
-                                <a class="rounded-0 bg-brown band-tall" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-brown band-tall" aria-valuenow="1" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-black band-short" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-black band-short" aria-valuenow="0" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-red band-short" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-red band-short" aria-valuenow="2" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-orange band-short" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-orange band-short" aria-valuenow="1000" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-blue band-short ms-5" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-blue band-short ms-5" aria-valuenow="0.25" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
-                                <a class="rounded-0 bg-gold band-tall" data-bs-toggle="modal"
+                                <a class="rounded-0 bg-brown band-tall" aria-valuenow="100" data-bs-toggle="modal"
                                     data-bs-target="#modalResistorColor"></a>
                             </div>
                             <div class="resistor-band visually-hidden" id="typeSMDResistorBand">
@@ -128,7 +125,6 @@
                         <h5 class="modal-title text-capitalize" id="modalBandTitle"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
                     <div class="resistor-band-color" id="resistorBandColor"></div>
                     <div class="modal-footer">
                         <span class="fw-light">minivocm.inc</span>
